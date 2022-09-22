@@ -6,6 +6,7 @@ import javax.crypto.SecretKey;
 import javax.swing.*;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 public class Alice {
@@ -35,6 +36,13 @@ public class Alice {
             byte[] cifrado = aes.doFinal(byteArray);
 
             Socket socket = new Socket("localhost", 5555);
+
+            SwitchObject objetoTroca = SwitchObject.builder().chave(chave).cipherText(cifrado).build();
+
+            ObjectOutputStream oout = new ObjectOutputStream(socket.getOutputStream());
+            oout.writeObject(objetoTroca);
+            oout.close();
+            socket.close();
         }
     }
 
