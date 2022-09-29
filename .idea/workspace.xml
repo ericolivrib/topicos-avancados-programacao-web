@@ -4,36 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e0c88a-b862-4063-8fa3-2dff6296ac18" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/Alice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/Bob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/SwitchObject.java" afterDir="false" />
+    <list default="true" id="889effc4-85a9-4b45-bdc9-85bf37e6509d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/msg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/Alice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/Alice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/Bob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/Bob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/SwitchObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/simetria/SwitchObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2F8ZH0px8eOKOeIcSWfhW8bhpcI" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FRz9kjEgr6TjkePGtSvnzgUC1Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,13 +46,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Alice">
     <configuration name="Alice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ufsm.poli.csi.tapw.simetria.Alice" />
+      <module name="topicos-avancados-programacao-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ufsm.poli.csi.tapw.simetria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.ufsm.poli.csi.tapw.simetria.Bob" />
       <module name="topicos-avancados-programacao-web" />
       <extension name="coverage">
         <pattern>
@@ -64,18 +79,19 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Alice" />
+        <item itemvalue="Application.Bob" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c6e0c88a-b862-4063-8fa3-2dff6296ac18" name="Changes" comment="" />
-      <created>1663875581942</created>
+      <changelist id="889effc4-85a9-4b45-bdc9-85bf37e6509d" name="Changes" comment="" />
+      <created>1664469536375</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1663875581942</updated>
-      <workItem from="1663875587260" duration="1091000" />
+      <updated>1664469536375</updated>
+      <workItem from="1664469538632" duration="1537000" />
     </task>
     <servers />
   </component>

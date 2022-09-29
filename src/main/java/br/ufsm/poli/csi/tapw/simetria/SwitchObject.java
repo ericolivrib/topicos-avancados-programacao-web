@@ -15,6 +15,7 @@ import java.io.Serializable;
 public class SwitchObject implements Serializable {
 
     private byte[] cipherText;
+    private String nomeArquivo;
     private SecretKey chave;
 
 }

@@ -13,36 +13,30 @@ public class Alice {
 
     public static void main(String[] args) throws Exception {
         JFileChooser fileChooser = new JFileChooser("");
-
         System.out.println("Selecionando arquivo...");
 
         if (fileChooser.showDialog(new JFrame(), "OK") == JFileChooser.APPROVE_OPTION) {
             File arquivo = fileChooser.getSelectedFile();
+            try (FileInputStream fin = new FileInputStream(arquivo)) {
+                byte[] byteArray = new byte[(int) fin.getChannel().size()];
 
-            FileInputStream fin = new FileInputStream(arquivo);
+                System.out.println(fin.read(byteArray));
+                System.out.println("Arquivo selecionado e lido...");
 
-            byte[] byteArray = new byte[(int) fin.getChannel().size()];
+                Cipher aes = Cipher.getInstance("AES");
+                SecretKey chave = KeyGenerator.getInstance("AES").generateKey();
 
-            fin.read(byteArray);
+                aes.init(Cipher.ENCRYPT_MODE, chave);
 
-            System.out.println("Arquivo selecionado e lido...");
+                byte[] cifrado = aes.doFinal(byteArray);
 
-            Cipher aes = Cipher.getInstance("AES");
+                try (Socket socket = new Socket("localhost", 5555); ObjectOutputStream oout = new ObjectOutputStream(socket.getOutputStream())) {
+                    SwitchObject objetoTroca = SwitchObject.builder().chave(chave).nomeArquivo(arquivo.getName()).cipherText(cifrado).build();
+                    oout.writeObject(objetoTroca);
+                }
+            }
 
-            SecretKey chave = KeyGenerator.getInstance("AES").generateKey();
 
-            aes.init(Cipher.ENCRYPT_MODE, chave);
-
-            byte[] cifrado = aes.doFinal(byteArray);
-
-            Socket socket = new Socket("localhost", 5555);
-
-            SwitchObject objetoTroca = SwitchObject.builder().chave(chave).cipherText(cifrado).build();
-
-            ObjectOutputStream oout = new ObjectOutputStream(socket.getOutputStream());
-            oout.writeObject(objetoTroca);
-            oout.close();
-            socket.close();
         }
     }
 
