@@ -1,4 +1,4 @@
-package br.ufsm.poli.csi.tapw.assimetria;
+package br.ufsm.poli.csi.tapw.criptografia.assimetria;
 
 import javax.crypto.Cipher;
 import javax.swing.*;

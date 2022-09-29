@@ -1,4 +1,4 @@
-package br.ufsm.poli.csi.tapw.simetria;
+package br.ufsm.poli.csi.tapw.criptografia.simetria;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
