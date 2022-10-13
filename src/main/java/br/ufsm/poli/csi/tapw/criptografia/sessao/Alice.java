@@ -14,8 +14,7 @@ import java.security.PublicKey;
 public class Alice {
 
     public static void main(String[] args) throws Exception {
-        JFileChooser fileChooser = new JFileChooser(
-                "C:\\Users\\aluno\\IdeaProjects\\topicos-avancados-programacao-web");
+        JFileChooser fileChooser = new JFileChooser("C:\\Users\\aluno");
         System.out.println("Selecionando arquivo...");
 
         if (fileChooser.showDialog(new JFrame(), "OK") == JFileChooser.APPROVE_OPTION) {
@@ -30,6 +29,7 @@ public class Alice {
 
                 /* Abre uma conexão */
                 Socket socket = new Socket("localhost", 5555);
+
 
                 /* Recebe a chave pública do Bob */
                 ObjectInputStream oin = new ObjectInputStream(socket.getInputStream());
@@ -58,11 +58,9 @@ public class Alice {
                 ObjectOutputStream oout = new ObjectOutputStream(socket.getOutputStream());
                 oout.writeObject(objetoTroca);
 
-                socket.close();
                 oout.close();
+                socket.close();
             }
-
-
         }
     }
 
