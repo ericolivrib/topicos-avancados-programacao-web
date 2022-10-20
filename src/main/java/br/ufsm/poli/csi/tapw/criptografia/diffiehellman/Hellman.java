@@ -1,7 +1,5 @@
 package br.ufsm.poli.csi.tapw.criptografia.diffiehellman;
 
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.util.Base64;
