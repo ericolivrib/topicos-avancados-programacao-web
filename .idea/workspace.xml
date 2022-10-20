@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889effc4-85a9-4b45-bdc9-85bf37e6509d" name="Changes" comment="Criptografia com chave de sessão">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/diffiehellman/Diffie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/diffiehellman/Hellman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade/Alice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade/Bob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade/SwitchObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade_sessao/Beltrano.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade_sessao/Confidencial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade_sessao/Fulano.java" afterDir="false" />
+    <list default="true" id="889effc4-85a9-4b45-bdc9-85bf37e6509d" name="Changes" comment="Criptografia de sessão com assinatura em desenvolvimento">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msg.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/sessao/Alice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufsm/poli/csi/tapw/criptografia/sessao/Alice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +43,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/aluno/IdeaProjects/topicos-avancados-programacao-web/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade_professor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aluno/IdeaProjects/topicos-avancados-programacao-web/src/main/java/br/ufsm/poli/csi/tapw/criptografia/integridade_professor&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aluno\IdeaProjects\topicos-avancados-programacao-web\src\main\java\br\ufsm\poli\csi\tapw\criptografia\integridade_professor" />
@@ -70,7 +59,7 @@
       <recent name="C:\Users\aluno\IdeaProjects\topicos-avancados-programacao-web\src\main\java\br\ufsm\poli\csi\tapw\criptografia\sessao" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Alice">
     <configuration name="Alice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ufsm.poli.csi.tapw.criptografia.integridade.Alice" />
       <module name="topicos-avancados-programacao-web" />
@@ -125,7 +114,9 @@
       <option name="presentableId" value="Default" />
       <updated>1664469536375</updated>
       <workItem from="1664469538632" duration="11502000" />
-      <workItem from="1665679268787" duration="10292000" />
+      <workItem from="1665679268787" duration="12102000" />
+      <workItem from="1666111425946" duration="12000" />
+      <workItem from="1666196775023" duration="663000" />
     </task>
     <task id="LOCAL-00001" summary="Recebendo arquivo de Alice para Bob">
       <created>1664471931927</created>
@@ -162,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664481369590</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Criptografia de sessão com assinatura em desenvolvimento">
+      <created>1665691422810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665691422810</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +183,7 @@
     <MESSAGE value="Criptografia com chaves assimétricas" />
     <MESSAGE value="Package criptografia" />
     <MESSAGE value="Criptografia com chave de sessão" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criptografia com chave de sessão" />
+    <MESSAGE value="Criptografia de sessão com assinatura em desenvolvimento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criptografia de sessão com assinatura em desenvolvimento" />
   </component>
 </project>
