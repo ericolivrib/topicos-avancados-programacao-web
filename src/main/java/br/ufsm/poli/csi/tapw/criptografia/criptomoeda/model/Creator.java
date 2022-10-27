@@ -7,7 +7,7 @@ import lombok.Getter;
 @Builder
 public class Creator {
 
-    private String id;
-    private byte[] key;
+    private final String id;
+    private final byte[] key;
 
 }
